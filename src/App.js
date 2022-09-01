@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import CustomNavbar from "./components/CustomNavbar";
+import Home from "./components/Home";
+import ReservationForm from "./components/ReservationForm";
+import ReservationList from "./components/ReservationList";
 
+// il nome del componente (che sia classe o funzione) dovrebbe rispecchiare
+// il nome del file
 function App() {
+  //JSX
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <CustomNavbar brand="Aperti di domenica!" />
+      <ReservationList />
+      <ReservationForm />
+      <Home />
     </div>
   );
 }
