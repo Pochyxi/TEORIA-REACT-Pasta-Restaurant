@@ -27,7 +27,6 @@ class Home extends Component {
 
                         {
                             menu.map(pasta => {
-                                console.log(pasta);
                                 return (
                                     <Carousel.Item 
                                     key={pasta.id}
